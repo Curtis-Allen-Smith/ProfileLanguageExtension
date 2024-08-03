@@ -1,0 +1,30 @@
+{
+  "name": "profile",
+  "displayName": "profile-extension",
+  "description": "Profile Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "profile",
+      "aliases": ["Profile", "profile"],
+      "extensions": [".profile",".properties",".json"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "profile",
+      "scopeName": "source.profile",
+      "path": "./syntaxes/profile.tmLanguage.json"
+    }],
+    "themes": [{
+      "label": "Profile Theme",
+      "uiTheme": "vs-dark",
+      "path": "./themes/profile-color-theme.json"
+    }]
+  }
+}
